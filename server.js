@@ -39,7 +39,7 @@ const server = http.createServer(app);
 // Setup Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "*", // Replace with your frontend domain in production
+    origin: "https://vercel-frontend-lonetown.vercel.app", // Replace with your frontend domain in production
     methods: ["GET", "POST"],
   },
 });
